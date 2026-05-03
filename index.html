@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Visto Atelier — Interiors that listen to light, silence and time</title>
+  <meta name="description" content="Visto Atelier is an interior design studio crafting heirloom-quality residential and hospitality spaces. Editorial restraint, tactile materiality, timeless detail." />
+  <meta name="theme-color" content="#0e0c0a" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Loader / shutter reveal -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__shutters" id="loaderShutters">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="loader__center">
+      <div class="loader__mono" aria-hidden="true">
+        <span>V</span><span class="amp">·</span><span>A</span>
+      </div>
+      <div class="loader__brand" id="loaderBrand">
+        <i>V</i><i>I</i><i>S</i><i>T</i><i>O</i>
+        <em>&nbsp;</em>
+        <i>A</i><i>T</i><i>E</i><i>L</i><i>I</i><i>E</i><i>R</i>
+      </div>
+
+      <div class="loader__words" id="loaderWords">
+        <span class="is-active">Interiors</span>
+        <span>Architecture</span>
+        <span>Atelier</span>
+        <span>Material</span>
+        <span>Restraint</span>
+        <span>Time</span>
+      </div>
+    </div>
+
+    <div class="loader__top">
+      <span class="loader__tag">Visto Atelier — Index 001</span>
+      <span class="loader__tag">A.D. MMXXVI</span>
+    </div>
+
+    <div class="loader__bottom">
+      <div class="loader__progress">
+        <span class="loader__bar"><i id="loaderFill"></i></span>
+        <span class="loader__count" id="loaderCount">000</span>
+      </div>
+      <p class="loader__caption">Composing space — light — material</p>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor__dot"></span>
+    <span class="cursor__ring"></span>
+    <span class="cursor__label" id="cursorLabel"></span>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="progress" id="progress" aria-hidden="true">
+    <span class="progress__bar" id="progressBar"></span>
+    <span class="progress__pct" id="progressPct">00</span>
+  </div>
+
+  <!-- Side rail with section indicator -->
+  <aside class="rail" id="rail" aria-hidden="true">
+    <span class="rail__line"><i id="railFill"></i></span>
+    <span class="rail__label" id="railLabel">Index</span>
+    <span class="rail__num" id="railNum">00 / 05</span>
+  </aside>
+
+  <!-- Top navigation -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand" data-cursor="logo">
+      <span class="nav__mark">VA</span>
+      <span class="nav__name">Visto Atelier</span>
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#manifesto"><span>01</span> Manifesto</a>
+      <a href="#capabilities"><span>02</span> Capabilities</a>
+      <a href="#works"><span>03</span> Works</a>
+      <a href="#process"><span>04</span> Process</a>
+      <a href="#contact"><span>05</span> Contact</a>
+    </nav>
+
+    <button class="nav__cta" data-cursor="link" id="navCta">
+      <span>Begin a project</span>
+      <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <button class="nav__burger" id="burger" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <aside class="menu" id="menu" aria-hidden="true">
+    <div class="menu__inner">
+      <ol class="menu__list">
+        <li><a href="#manifesto" data-num="01">Manifesto</a></li>
+        <li><a href="#capabilities" data-num="02">Capabilities</a></li>
+        <li><a href="#works" data-num="03">Works</a></li>
+        <li><a href="#process" data-num="04">Process</a></li>
+        <li><a href="#contact" data-num="05">Contact</a></li>
+      </ol>
+      <div class="menu__foot">
+        <a class="menu__email" href="mailto:hello@vistoatelier.com">hello@vistoatelier.com</a>
+        <p class="menu__locs">Milan · New York · Lisbon</p>
+        <a class="menu__ig" href="https://www.instagram.com/vistoatelier/" target="_blank" rel="noopener">Instagram <span>↗</span></a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="top">
+
+    <!-- ───────────── HERO ───────────── -->
+    <section class="hero" id="hero" data-rail-num="00 / 05" data-rail-label="The Atelier">
+      <div class="hero__grain"></div>
+      <div class="hero__spot" id="heroSpot" aria-hidden="true"></div>
+      <div class="hero__particles" id="heroParticles" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="hero__media" data-parallax="0.18">
+        <img
+          src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=2400&q=80"
+          alt="Interior with arched window and warm light"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="hero__veil"></div>
+      </div>
+
+      <div class="hero__chrome">
+        <div class="hero__topline">
+          <span class="dot"></span>
+          <span>Studio of Interior Architecture</span>
+          <span class="sep">/</span>
+          <span>Est. <span class="hero__year">2026</span></span>
+        </div>
+
+        <h1 class="hero__title" aria-label="Spaces that listen to light, silence, and time.">
+          <span class="line"><span class="word"><i>Spaces</i></span> <span class="word"><i>that</i></span> <span class="word"><i>listen</i></span></span>
+          <span class="line"><span class="word"><i>to</i></span> <span class="word"><i>light,</i></span></span>
+          <span class="line italic"><span class="word"><i>silence</i></span> <span class="word"><i>&amp;</i></span> <span class="word"><i>time.</i></span></span>
+        </h1>
+
+        <div class="hero__bottom">
+          <div class="hero__meta">
+            <p class="hero__sub">Visto Atelier is an interior design practice composing residential, hospitality and bespoke spaces — defined by restraint, materiality, and the slow craft of detail.</p>
+          </div>
+
+          <a href="#manifesto" class="hero__scroll" data-cursor="scroll">
+            <span class="hero__scroll-label">Scroll to enter</span>
+            <span class="hero__scroll-line"><i></i></span>
+          </a>
+        </div>
+
+        <div class="hero__corners">
+          <div class="corner tl">N 45.4642°  ·  E 09.1900°</div>
+          <div class="corner tr">Vol. 014 — A.D. MMXXVI</div>
+          <div class="corner bl">Index 001 / 005</div>
+          <div class="corner br">Atelier · Milano</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── MARQUEE ───────────── -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee">
+        <span>Residential</span><span class="bullet">✦</span>
+        <span>Hospitality</span><span class="bullet">✦</span>
+        <span>Bespoke Furniture</span><span class="bullet">✦</span>
+        <span>Art Direction</span><span class="bullet">✦</span>
+        <span>Material Research</span><span class="bullet">✦</span>
+        <span>Residential</span><span class="bullet">✦</span>
+        <span>Hospitality</span><span class="bullet">✦</span>
+        <span>Bespoke Furniture</span><span class="bullet">✦</span>
+        <span>Art Direction</span><span class="bullet">✦</span>
+        <span>Material Research</span><span class="bullet">✦</span>
+      </div>
+    </section>
+
+    <!-- ───────────── MANIFESTO ───────────── -->
+    <section class="manifesto" id="manifesto" data-rail-num="01 / 05" data-rail-label="Manifesto">
+      <div class="section-head">
+        <span class="section-num">01 —</span>
+        <span class="section-name">Manifesto</span>
+      </div>
+
+      <div class="manifesto__grid">
+        <p class="manifesto__lead reveal-lines">
+          We design interiors as quiet dialogues —
+          between architecture and atmosphere,
+          between the hand of the maker and the
+          life of the inhabitant.
+          Each project is composed slowly,
+          <em>like a piece of music</em>,
+          tuned to the proportions of a room
+          and the texture of its light.
+        </p>
+
+        <aside class="manifesto__aside">
+          <figure class="manifesto__figure" data-parallax="0.12">
+            <img
+              src="https://images.unsplash.com/photo-1615529182904-14819c35db37?auto=format&fit=crop&w=1400&q=80"
+              alt="Detail of a textured plaster wall and brass handle"
+              loading="lazy"
+            />
+          </figure>
+          <p class="manifesto__caption">
+            <span>—</span> A handcrafted lime plaster wall, Casa&nbsp;Marenco, 2024
+          </p>
+        </aside>
+      </div>
+
+      <div class="manifesto__values">
+        <div class="value">
+          <span class="value__num">i.</span>
+          <h3>Restraint</h3>
+          <p>Every gesture earned. We remove until only what is necessary remains.</p>
+        </div>
+        <div class="value">
+          <span class="value__num">ii.</span>
+          <h3>Materiality</h3>
+          <p>Stone, plaster, oiled timber, hand-loomed cloth — surfaces meant to age beautifully.</p>
+        </div>
+        <div class="value">
+          <span class="value__num">iii.</span>
+          <h3>Proportion</h3>
+          <p>Rooms calibrated to the body, the breath, the daily ritual of a life lived inside them.</p>
+        </div>
+        <div class="value">
+          <span class="value__num">iv.</span>
+          <h3>Time</h3>
+          <p>We design for decades, not seasons. Interiors should grow more honest as they wear.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────── CAPABILITIES ───────────── -->
+    <section class="capabilities" id="capabilities" data-rail-num="02 / 05" data-rail-label="Capabilities">
+      <div class="section-head">
+        <span class="section-num">02 —</span>
+        <span class="section-name">Capabilities</span>
+      </div>
+
+      <h2 class="capabilities__title">
+        A studio practice<br />
+        <em>without disciplines.</em>
+      </h2>
+
+      <ul class="cap-list" id="capList">
+        <li class="cap" data-img="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80">
+          <span class="cap__num">01</span>
+          <span class="cap__name">Residential Interiors</span>
+          <span class="cap__tags">Apartments · Townhouses · Country Estates</span>
+          <span class="cap__plus">+</span>
+        </li>
+        <li class="cap" data-img="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80">
+          <span class="cap__num">02</span>
+          <span class="cap__name">Hospitality &amp; Retail</span>
+          <span class="cap__tags">Hotels · Restaurants · Flagship Spaces</span>
+          <span class="cap__plus">+</span>
+        </li>
+        <li class="cap" data-img="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=80">
+          <span class="cap__num">03</span>
+          <span class="cap__name">Bespoke Furniture</span>
+          <span class="cap__tags">Limited Editions · Collaborations · Heirlooms</span>
+          <span class="cap__plus">+</span>
+        </li>
+        <li class="cap" data-img="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=1200&q=80">
+          <span class="cap__num">04</span>
+          <span class="cap__name">Art Direction</span>
+          <span class="cap__tags">Set Design · Editorial · Brand Worlds</span>
+          <span class="cap__plus">+</span>
+        </li>
+        <li class="cap" data-img="https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=1200&q=80">
+          <span class="cap__num">05</span>
+          <span class="cap__name">Material Research</span>
+          <span class="cap__tags">Plaster · Stone · Textile · Patina</span>
+          <span class="cap__plus">+</span>
+        </li>
+
+        <li class="cap__preview" id="capPreview" aria-hidden="true">
+          <img id="capPreviewImg" src="" alt="" />
+        </li>
+      </ul>
+    </section>
+
+    <!-- ───────────── WORKS ───────────── -->
+    <section class="works" id="works" data-rail-num="03 / 05" data-rail-label="Works">
+      <div class="section-head light">
+        <span class="section-num">03 —</span>
+        <span class="section-name">Selected Works</span>
+      </div>
+
+      <div class="works__intro">
+        <h2 class="works__title">
+          A small portfolio,<br />composed with care.
+        </h2>
+        <p class="works__sub">A curated selection from the past four years — residences, retreats, and one or two quiet hotels.</p>
+      </div>
+
+      <div class="works__grid">
+        <article class="project project--lg" data-cursor="view">
+          <a href="#contact" class="project__link">
+            <figure class="project__figure">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=80" alt="Casa Marenco — interior" loading="lazy" />
+            </figure>
+            <div class="project__meta">
+              <span class="project__num">001</span>
+              <h3 class="project__name">Casa Marenco</h3>
+              <span class="project__loc">Lake Como, IT  ·  2024</span>
+              <span class="project__tags">Residential · Restoration</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project" data-cursor="view">
+          <a href="#contact" class="project__link">
+            <figure class="project__figure">
+              <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1400&q=80" alt="Hotel Auriga — lobby" loading="lazy" />
+            </figure>
+            <div class="project__meta">
+              <span class="project__num">002</span>
+              <h3 class="project__name">Hôtel Auriga</h3>
+              <span class="project__loc">Lisbon, PT  ·  2024</span>
+              <span class="project__tags">Hospitality</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project" data-cursor="view">
+          <a href="#contact" class="project__link">
+            <figure class="project__figure">
+              <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1400&q=80" alt="Apartment Verbena — living room" loading="lazy" />
+            </figure>
+            <div class="project__meta">
+              <span class="project__num">003</span>
+              <h3 class="project__name">Apartment Verbena</h3>
+              <span class="project__loc">Milan, IT  ·  2023</span>
+              <span class="project__tags">Residential</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project project--wide" data-cursor="view">
+          <a href="#contact" class="project__link">
+            <figure class="project__figure">
+              <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1800&q=80" alt="Studio della Luce — workspace" loading="lazy" />
+            </figure>
+            <div class="project__meta">
+              <span class="project__num">004</span>
+              <h3 class="project__name">Studio della Luce</h3>
+              <span class="project__loc">Brera, IT  ·  2023</span>
+              <span class="project__tags">Workspace · Art Direction</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project" data-cursor="view">
+          <a href="#contact" class="project__link">
+            <figure class="project__figure">
+              <img src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?auto=format&fit=crop&w=1400&q=80" alt="Maison Olive — guest suite" loading="lazy" />
+            </figure>
+            <div class="project__meta">
+              <span class="project__num">005</span>
+              <h3 class="project__name">Maison Olive</h3>
+              <span class="project__loc">Provence, FR  ·  2022</span>
+              <span class="project__tags">Residential · Restoration</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="project" data-cursor="view">
+          <a href="#contact" class="project__link">
+            <figure class="project__figure">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1400&q=80" alt="Ristorante Galena — dining room" loading="lazy" />
+            </figure>
+            <div class="project__meta">
+              <span class="project__num">006</span>
+              <h3 class="project__name">Ristorante Galena</h3>
+              <span class="project__loc">Turin, IT  ·  2022</span>
+              <span class="project__tags">Hospitality</span>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <a href="#contact" class="works__cta" data-cursor="link">
+        <span>Request the full portfolio</span>
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- ───────────── PROCESS ───────────── -->
+    <section class="process" id="process" data-rail-num="04 / 05" data-rail-label="Process">
+      <div class="section-head">
+        <span class="section-num">04 —</span>
+        <span class="section-name">Process</span>
+      </div>
+
+      <div class="process__inner">
+        <div class="process__sticky">
+          <h2 class="process__title">
+            <span>Four movements,</span><br />
+            <em>one quiet composition.</em>
+          </h2>
+          <p class="process__lead">Every Visto Atelier project follows the same patient rhythm — from first listening, to last detail.</p>
+        </div>
+
+        <ol class="process__list">
+          <li class="step">
+            <span class="step__num">i.</span>
+            <h3>Listening</h3>
+            <p>Conversations on site and at the table. We learn the way you wake, host, work, and rest — long before a wall is drawn.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">ii.</span>
+            <h3>Composition</h3>
+            <p>Plans, sections, materials. The first pass is always editorial — fewer choices, more conviction.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">iii.</span>
+            <h3>Making</h3>
+            <p>We work with a small circle of artisans across Italy and Portugal — masons, weavers, cabinetmakers, light-makers.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">iv.</span>
+            <h3>Settling</h3>
+            <p>We return after a year. Interiors are not finished on installation day; they finish themselves through use.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ───────────── PHILOSOPHY / PULL QUOTE ───────────── -->
+    <section class="quote">
+      <p class="quote__body">
+        <span class="quote__mark">&ldquo;</span>
+        A house should not be<br />
+        <em>finished —</em> it should be<br />
+        <em>arrived at,</em> slowly.
+      </p>
+      <p class="quote__cite">— Prateek Bhurat, Founding Director</p>
+    </section>
+
+    <!-- ───────────── PRESS / RECOGNITION ───────────── -->
+    <section class="press">
+      <div class="press__line">
+        <span>As featured in</span>
+        <span class="dash">—</span>
+        <ul class="press__list">
+          <li>AD Italia</li>
+          <li class="bullet">·</li>
+          <li>Wallpaper*</li>
+          <li class="bullet">·</li>
+          <li>Cabana Magazine</li>
+          <li class="bullet">·</li>
+          <li>Domus</li>
+          <li class="bullet">·</li>
+          <li>Frame</li>
+          <li class="bullet">·</li>
+          <li>Dezeen</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────── CONTACT ───────────── -->
+    <section class="contact" id="contact" data-rail-num="05 / 05" data-rail-label="Contact">
+      <div class="section-head light">
+        <span class="section-num">05 —</span>
+        <span class="section-name">Contact</span>
+      </div>
+
+      <h2 class="contact__title">
+        Let us compose<br />
+        <em>something timeless</em><br />
+        together.
+      </h2>
+
+      <div class="contact__grid">
+        <a href="mailto:hello@vistoatelier.com" class="contact__email" data-cursor="email">
+          <span class="contact__label">Write to the studio</span>
+          <span class="contact__value" id="contactEmail">hello@vistoatelier.com</span>
+          <span class="contact__under"></span>
+        </a>
+
+        <div class="contact__cols">
+          <div>
+            <h4>Studio</h4>
+            <p>Via della Spiga 19<br/>20121 Milano, Italia</p>
+          </div>
+          <div>
+            <h4>Office hours</h4>
+            <p>Monday — Friday<br/>09:30 — 18:30 CET</p>
+          </div>
+          <div>
+            <h4>Press &amp; Press kit</h4>
+            <p><a href="mailto:press@vistoatelier.com">press@vistoatelier.com</a></p>
+          </div>
+          <div>
+            <h4>Careers</h4>
+            <p><a href="mailto:atelier@vistoatelier.com">atelier@vistoatelier.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__social">
+        <a href="https://www.instagram.com/vistoatelier/" target="_blank" rel="noopener" data-cursor="link">Instagram <span>↗</span></a>
+        <a href="#" data-cursor="link">Pinterest <span>↗</span></a>
+        <a href="#" data-cursor="link">Are.na <span>↗</span></a>
+        <a href="#" data-cursor="link">Behance <span>↗</span></a>
+      </div>
+    </section>
+
+    <!-- ───────────── FOOTER ───────────── -->
+    <footer class="footer">
+      <div class="footer__giant" id="footerGiant">VISTO ATELIER</div>
+      <div class="footer__row">
+        <span>© <span id="year"></span> Visto Atelier S.r.l.</span>
+        <span>P.IVA 09844210961</span>
+        <span>All work © respective clients</span>
+        <span>Site, hand-built in Milano</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Animations -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
